@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  post_id: 1
+  title: MyText
+  post_content: MyText
+  last_access_timestamp: 2013-09-25 02:04:37
+  posted_date: 2013-09-25 02:04:37
+  category: 
+  tag: 
+  user: 
+
+two:
+  post_id: 1
+  title: MyText
+  post_content: MyText
+  last_access_timestamp: 2013-09-25 02:04:37
+  posted_date: 2013-09-25 02:04:37
+  category: 
+  tag: 
+  user: 

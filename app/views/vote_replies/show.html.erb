@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vote reply count:</b>
+  <%= @vote_reply.vote_reply_count %>
+</p>
+
+<p>
+  <b>Reply:</b>
+  <%= @vote_reply.reply %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @vote_reply.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_vote_reply_path(@vote_reply) %> |
+<%= link_to 'Back', vote_replies_path %>

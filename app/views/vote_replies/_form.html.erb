@@ -1,0 +1,29 @@
+<%= form_for(@vote_reply) do |f| %>
+  <% if @vote_reply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vote_reply.errors.count, "error") %> prohibited this vote_reply from being saved:</h2>
+
+      <ul>
+      <% @vote_reply.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vote_reply_count %><br />
+    <%= f.number_field :vote_reply_count %>
+  </div>
+  <div class="field">
+    <%= f.label :reply %><br />
+    <%= f.text_field :reply %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

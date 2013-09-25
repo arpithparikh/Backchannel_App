@@ -1,0 +1,27 @@
+<h1>Listing vote_posts</h1>
+
+<table>
+  <tr>
+    <th>Vote post count</th>
+    <th>Post</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vote_posts.each do |vote_post| %>
+  <tr>
+    <td><%= vote_post.vote_post_count %></td>
+    <td><%= vote_post.post %></td>
+    <td><%= vote_post.user %></td>
+    <td><%= link_to 'Show', vote_post %></td>
+    <td><%= link_to 'Edit', edit_vote_post_path(vote_post) %></td>
+    <td><%= link_to 'Destroy', vote_post, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vote post', new_vote_post_path %>
